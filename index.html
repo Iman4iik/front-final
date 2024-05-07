@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Main</title>
+    <link rel="stylesheet" href="uideStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <header>
+            <h1 onclick="window.location.href = 'index.html'">UIDE</h1>
+        <div class="navbar">
+            <a href="aboutus.html">Bız jaily</a>
+            <a href="chillPage.html">Chill</a>
+            <a href="profile.html">Profile</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-courses">
+            <div class="categories">
+                <h1>Därısterdıñ <br>sanattary</h1>
+                <button onclick="location.href = 'programming.html'">
+                    Programalau
+                </button>
+                <button onclick="location.href = 'Dizain.html'">
+                    Dizain
+                </button>
+                <button onclick="location.href = 'english.html'">
+                    Ağylşyn tılı
+                </button>
+                <button onclick="location.href = 'math-fiz.html'">
+                    Matematika-Fizika
+                </button>
+            </div>
+            <div class="categories-video">
+                <img src="images/english.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="container-carousel">
+            <img src="https://248006.selcdn.ru/MainSite/it-professions-decor.svg" decoding="async" loading="lazy" alt="" class="catalog-popular__decor" width="135" height="118">
+            <h1>Tanymal därıster</h1>
+
+            <h2>Özıñız qalağan bağytty tez bastap ketuge arnalğan aldyñğy qatarly därıster. Sız az uaqyt ışınde sol salany jaqsy deñgeide meñgere alasyz.</h2>
+            <div class="slider">
+
+                <div class="slide">
+                        <div class="course-card" onclick="changePage(this)" style="background-color: #d6d6ff" >
+                            <div class="card-text">
+                                <p>Därıs</p>
+                                <h2>Python-developer</h2>
+                            </div>
+                            <img src="images/python.png" alt="">
+                        </div>
+                </div>
+
+                <div class="slide">
+                        <div class="course-card" onclick="changePage(this)" style="background-color: #60b3ff">
+                            <div class="card-text">
+                                <p>Därıs</p>
+                                <h2 id="daris">Java-developer</h2>
+                            </div>
+                            <img src="images/java.png" alt="">
+                        </div>
+                </div>
+
+                <div class="slide">
+                        <div class="course-card" onclick="changePage(this)" style="background-color: #fdc76c">
+                            <div class="card-text" >
+                                <p>Därıs</p>
+                                <h2>Grafikalyq dizainer</h2>
+                            </div>
+                            <img src="images/designer.png" alt="">
+                        </div>
+                </div>
+
+                <div class="slide">
+                        <div class="course-card" onclick="changePage(this)" style="background-color: #47c293">
+                            <div class="card-text">
+                                <p>Därıs</p>
+                                <h2>Ağylşyn tılı (Beginner)</h2>
+                            </div>
+                            <img src="images/eng.png" alt="">
+                        </div>
+                </div>
+            </div>
+            <button class="btn btn-next">></button>
+            <button class="btn btn-prev"><</button>
+        </div>
+
+        <div class="alash">
+            <img src="images/alash.jpg">
+            <p>Bır Allağa siynyp,<br> Kel balalar oqylyq. <br> Oqyğandy köñılge, <br> Yqylaspen toqylyq.</p>
+        </div>
+        <div class="container-information">
+            <h2>Bızdıñ artyqşylyqtarymyz</h2>
+            <div class="informations">
+                <div class="info">
+                    <div class="icon" onmouseover="rotateP(this)">
+                        🌴
+                    </div>
+                    <p class = "info-p">100% online</p>
+                    <p class="second-p">
+                        Jūmystan/oqudan keiıngı yñğaily uaqyttağy sabaqtar
+                    </p>
+                </div>
+                <div class="info">
+                    <div class="icon">
+                        🤖
+                    </div>
+                    <p class = "info-p">Täjıribege fokus</p>
+                    <p class="second-p">
+                        Üzdıksız damu
+                    </p>
+                </div>
+                <div class="info">
+                    <div class="icon">
+                        🚀
+                    </div>
+                    <p class = "info-p">Aldyñğy qatarly mamandar</p>
+                    <p class="second-p">
+                        Özıne senımdı ūstazdar
+                    </p>
+                </div>
+                <div class="info">
+                    <div class="icon">
+                        🎓
+                    </div>
+                    <p class = "info-p">Myqty bağdarlama</p>
+                    <p class="second-p">
+                        Az uaqytta sapaly bılım alu
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-cards">
+            <div class="card1">
+                <img src="images/it.png" alt="">
+                <h1>IT</h1>
+                <p>IT salasyn tolyq meñgeruge kömektesetın därıster.</p>
+                <button class="left-diagonal-button" onclick="window.location.href='programming.html'">
+                    Tolyğyraq
+                </button>
+            </div>
+            <div class="card2">
+                <img src="images/engl.png" alt="">
+                <h1>Tılder</h1>
+                <p>Özge tıldıñ bärın bıl.</p>
+                <button class="right-diagonal-button"  onclick="window.location.href='english.html'">
+                    Tolyğyraq
+                </button>
+            </div>
+            <div class="card3">
+                <img src="images/designLog.png" alt="">
+                <h1>Dizain</h1>
+                <p>Dizain jaily üirenıp-bıluge kömektesedı.</p>
+                <button class="right-diagonal-button"  onclick="window.location.href='Dizain.html'">
+                    Tolyğyraq
+                </button>
+            </div>
+            <div class="card4">
+                <img src="images/mathAndPhys.png" alt="" >
+                <h1>Naqty ğylymdar</h1>
+                <p>2+2=?.</p>
+                <button class="left-diagonal-button"  onclick="window.location.href='math-fiz.html '">
+                    Tolyğyraq
+                </button>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="up-footer">
+            <div class="first-column">
+                <p>UIDE</p>
+            </div>
+            <div class="second-column">
+                <p>FRONT-END FINAL PROJECT</p>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <h1>UIDE</h1>
+            <p>©2022</p>
+        </div>
+    </footer>
+    <script src="uideScript.js"></script>
+</body>
+</html>

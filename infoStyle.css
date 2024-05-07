@@ -1,0 +1,129 @@
+body {
+    background-color: #f7f7f5 ;
+    margin: 0;
+}
+.infous {
+    display:flex;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    z-index: 100;
+    cursor: pointer;
+
+}
+
+header h1 {
+    font-family: Graphik,sans-serif;
+    font-size: 30px;
+}
+
+.navbar {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-family: Graphik,sans-serif;
+    color: black;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.us{
+    margin: 0 10%;
+}
+
+.left-div{
+    display: flex;
+    align-items: center;
+}
+.right-div{
+    justify-content: space-between;
+    margin-top:40px;
+    font-size:19px;
+    color: black;
+    width: 50%;
+    word-spacing: 7px;
+}
+.container-about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:80px 0 100px;
+
+}
+
+.person {
+    text-align: center;
+}
+.person img{
+    width: 305px;
+    height: 400px;
+}
+footer{
+    background-color: #242424;
+    color:#f7f7f5;
+    padding:15px 40px;
+    font-family: Arial,sans-serif;
+}
+.up-footer{
+    display: flex;
+    justify-content: space-between;
+    font-size:12px;
+}
+.bottom-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoUide{
+    width: 400px;
+    height: 350px;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+
+
+@media screen and (max-width: 959px) {
+    .infous {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-courses video{
+        width: 100%;
+    }
+
+    .container-courses img{
+        width: 100%;
+    }
+
+    .logoUide{
+        width: 350px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .logoUide{
+        width: 250px;
+        height: 200px;
+    }
+}
